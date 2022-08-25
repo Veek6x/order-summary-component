@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+main{
+    max-width: 375px;
+    margin: 70px auto;
+    text-align: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+}
+h2{
+    font-weight: 900;
+}
+main>div:nth-child(1) img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.wrapper{
+    padding: 10px;
+}
+.wrapper div:first-child div:first-child p{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    background-color: hsla(224, 23%, 55%, 0.276);
+    padding: 3px 1px 3px;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-end;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.plan>div h4{
+    margin: 6px;
+}
+.plan>div h4:nth-child(2){
+    opacity: 70%;
+}
+.plan p{
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+.icon{
+    width: 50px;
+    height: auto;
+}
+.btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 20px;
+}
+.link{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.btn:hover{
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.80) ;
+    opacity: 50%;
+}
+.plan p:hover{
+    text-decoration: none;
+    opacity: 60%;
+    cursor: pointer;
+}
+.link:hover{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+@media screen and (min-width:1400px){
+    body{
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    main{
+    max-width: 1440px;
+    margin: 80px 500px;
+    }
+}
